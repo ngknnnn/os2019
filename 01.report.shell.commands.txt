@@ -1,0 +1,67 @@
+ngkn@ngkn-G3-3579:~/Desktop$ echo hello world
+hello world
+ngkn@ngkn-G3-3579:~/Desktop$ passwd
+Changing password for ngkn.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+Bad: new password is just a wrapped version of the old one
+Enter new UNIX password: 
+Retype new UNIX password: 
+Bad: new password is just a wrapped version of the old one
+Enter new UNIX password: 
+Retype new UNIX password: 
+Sorry, passwords do not match
+passwd: Authentication token manipulation error
+passwd: password unchanged
+ngkn@ngkn-G3-3579:~/Desktop$ date
+Thứ tư, 03 Tháng 4 năm 2019 11:28:33 +07
+ngkn@ngkn-G3-3579:~/Desktop$ hostname
+ngkn-G3-3579
+ngkn@ngkn-G3-3579:~/Desktop$ arch
+x86_64
+ngkn@ngkn-G3-3579:~/Desktop$ uname -a
+Linux ngkn-G3-3579 4.18.0-17-generic #18~18.04.1-Ubuntu SMP Fri Mar 15 15:27:12 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+ngkn@ngkn-G3-3579:~/Desktop$ dmesg
+[    0.000000] microcode: microcode updated early to revision 0x96, date = 2018-05-02
+[    0.000000] Linux version 4.18.0-17-generic (buildd@lgw01-amd64-021) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #18~18.04.1-Ubuntu SMP Fri Mar 15 15:27:12 UTC 2019 (Ubuntu 4.18.0-17.18~18.04.1-generic 4.18.20)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.18.0-17-generic root=UUID=b52614c8-a884-41f0-98ec-82b4fb67a083 ro quiet splash vt.handoff=1
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+ngkn@ngkn-G3-3579:~/Desktop$ uptime
+ 11:29:01 up 21 min,  1 user,  load average: 0,22, 0,55, 0,63
+ngkn@ngkn-G3-3579:~/Desktop$ whoami
+ngkn
+ngkn@ngkn-G3-3579:~/Desktop$ who
+ngkn     :0           2019-04-03 11:07 (:0)
+ngkn@ngkn-G3-3579:~/Desktop$ id
+uid=1000(ngkn) gid=1000(ngkn) groups=1000(ngkn),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+ngkn@ngkn-G3-3579:~/Desktop$ last
+ngkn     :0           :0               Wed Apr  3 11:07   still logged in
+reboot   system boot  4.18.0-17-generi Wed Apr  3 11:07   still running
+ngkn     :0           :0               Wed Apr  3 11:00 - crash  (00:06)
+reboot   system boot  4.18.0-15-generi Wed Apr  3 11:00   still running
+ngkn     tty3                          Wed Apr  3 10:58 - down   (00:00)
+ngkn     :0           :0               Wed Apr  3 10:57 - 10:59  (00:01)
+reboot   system boot  4.18.0-17-generi Wed Apr  3 10:57 - 10:59  (00:02)
+ngkn     :0           :0               Wed Apr  3 10:54 - 10:55  (00:00)
+reboot   system boot  4.18.0-17-generi Wed Apr  3 10:54 - 10:55  (00:01)
+ngkn     :0           :0               Wed Apr  3 10:52 - crash  (00:01)
+reboot   system boot  4.18.0-17-generi Wed Apr  3 10:52 - 10:55  (00:03)
+
+wtmp begins Wed Apr  3 10:52:11 2019
+ngkn@ngkn-G3-3579:~/Desktop$ finger
+
+Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+ngkn@ngkn-G3-3579:~/Desktop$ w
+ 11:29:16 up 21 min,  1 user,  load average: 0,24, 0,53, 0,63
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ngkn     :0       :0               11:07   ?xdm?  54.43s  0.00s /usr/lib/gdm3/g
+
+
