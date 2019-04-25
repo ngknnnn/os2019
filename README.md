@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *nguyen khanh nam*
+* Name: *Nguyen Khanh Nam*
 * ID: *USTHBI8-122*
 
 
