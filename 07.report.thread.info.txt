@@ -1,0 +1,12 @@
+ngkn@ngkn-VirtualBox:~$ ps aux | grep -i firefox
+ngkn      2942 49.2  6.8 1890964 277744 tty2   Sl+  09:08   0:26 /usr/lib/firefox/firefox -new-window
+ngkn      3123  7.0  3.4 1562712 140876 tty2   Sl+  09:09   0:02 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 173750 -parentBuildID 20190410105841 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 2942 true tab
+ngkn      3203  3.0  2.6 1524864 105356 tty2   Sl+  09:09   0:01 /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 5468 -prefMapSize 173750 -parentBuildID 20190410105841 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 2942 true tab
+ngkn      3253  1.3  1.9 1502808 78636 tty2    Sl+  09:09   0:00 /usr/lib/firefox/firefox -contentproc -childID 4 -isForBrowser -prefsLen 6275 -prefMapSize 173750 -parentBuildID 20190410105841 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 2942 true tab
+ngkn      3310  0.0  0.0  23076  1108 pts/0    S+   09:09   0:00 grep --color=auto -i firefox
+ngkn@ngkn-VirtualBox:~$ ps -o nlwp 2942
+NLWP
+  53
+ngkn@ngkn-VirtualBox:~$ cat /proc/2942/status | grep -i threads
+Threads:	53
+
